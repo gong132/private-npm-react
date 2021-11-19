@@ -1,0 +1,76 @@
+.cusSelect {
+  display: flex;
+  align-items: center;
+
+  >span {
+    color: #4A5774;
+    opacity: 0.7;
+    margin-right: 8px;
+    font-weight: bold;
+    word-break: keep-all;
+    font-size: 13px;
+    // transform: scale(0.84);
+  }
+
+  :global {
+    // .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    //   padding: 0;
+    // }
+  
+    .ant-select {
+      border: unset;
+      width: 100%;
+
+      .ant-select-arrow {
+        top: 50%;
+        vertical-align: middle;
+        // margin-top: -5px;
+        .findfit_icon{
+          width: 16px;
+          height: 16px;
+        }
+        img {
+          width: 16px;
+          height: 16px;
+          position: relative;
+          top: -3px;
+          // right: -5px;
+        }
+      }
+
+      .ant-select-selector {
+        border: unset;
+        background: #F5F6F8;
+        border-radius: 2px;
+        height: 28px !important;
+
+        .ant-select-selection-item {
+          display: inline-block;
+          font-size: 13px;
+          color: #35425E;
+          height: 28px;
+          line-height: 28px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          position: relative;
+          left: 1px;
+          padding-right: unset;
+        }
+      }
+
+      .ant-select-item-option-state {
+        display: none;
+      }
+    }
+  }
+}
+
+.dropdown{
+  :global {
+    .ant-select-item-option-content{
+      color: #35425e;
+      margin-right: 16px;
+      font-size: 13px;
+    }
+  }
+}

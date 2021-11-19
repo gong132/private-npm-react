@@ -1,0 +1,29 @@
+.box {
+  display: inline-block;
+  &_img {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    top: -1px;
+  }
+
+  &_text {
+    font-size: 13px;
+    color: #1F51A4;
+    line-height: 28px;
+  }
+}
+.box:hover {
+  cursor: pointer;
+}
+
+.disabled {
+  &_text {
+    color: rgba(74,87,116,0.4)
+  }
+}
+
+.disabled:hover {
+  cursor:no-drop;
+}
